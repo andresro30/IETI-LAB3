@@ -37,7 +37,8 @@ class TempDrawer extends Component {
     };
 
     logOut(){
-        //this.props.logOut;
+        console.log("logOut en draw");
+        this.props.logOut();
     }
 
     render() {
@@ -102,7 +103,7 @@ class TempDrawer extends Component {
                     variant="contained"
                     color="primary"
                     className={classes.signOff}
-                    onClick={this.logout}
+                    onClick={this.logOut}
                 >
                     Logout
                 </Button></Grid>}

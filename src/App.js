@@ -25,6 +25,7 @@ class App extends Component {
     logOut(){
         localStorage.clear();
         localStorage.setItem('isLoggedIn',false);
+        this.handleLogginChange();
     };
 
     render() {
